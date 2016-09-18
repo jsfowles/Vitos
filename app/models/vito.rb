@@ -1,0 +1,2 @@
+class Vito < ApplicationRecord
+end

@@ -1,0 +1,1 @@
+json.partial! "vitos/vito", vito: @vito

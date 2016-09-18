@@ -1,0 +1,27 @@
+<%= form_for(vito) do |f| %>
+  <% if vito.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vito.errors.count, "error") %> prohibited this vito from being saved:</h2>
+
+      <ul>
+      <% vito.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :time %>
+    <%= f.text_field :time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :updates %>
+    <%= f.text_field :updates %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

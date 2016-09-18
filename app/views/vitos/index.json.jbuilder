@@ -1,0 +1,1 @@
+json.array! @vitos, partial: 'vitos/vito', as: :vito
