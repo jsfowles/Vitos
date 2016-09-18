@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20160918225623) do
 
   create_table "vitos", force: :cascade do |t|
     t.string   "time"
-    t.text   "updates"
+    t.string   "updates"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
