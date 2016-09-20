@@ -30,7 +30,8 @@ ActiveRecord::Schema.define(version: 20160919150151) do
   end
 
   create_table "vitos", force: :cascade do |t|
-    t.string   "time"
+    t.string   "open"
+    t.string   "close"
     t.text     "updates"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
