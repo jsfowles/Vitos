@@ -10,18 +10,36 @@
       </ul>
     </div>
   <% end %>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Open</th>
+          <th>Close</th>
+        </tr>
+      </thead>
+      </tbody>
+        <tr>
+          <td>Sunday</td>
+          <td>
+            <%= f.label :time, label: false %>
+            <%= f.text_field :time, label: false %>
+          </td>
+          <td>
+            <%= f.label :time, label:false %>
+            <%= f.text_field :time, label:false %>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-  <div class="field">
-    <%= f.label :time %>
-    <%= f.text_field :time %>
-  </div>
 
-  <div class="field">
-    <%= f.label :updates %>
-    <%= f.text_field :updates %>
-  </div>
+    <div class="field">
+      <%= f.label :updates %>
+      <%= f.text_field :updates %>
+    </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
 <% end %>
