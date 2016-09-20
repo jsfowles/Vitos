@@ -13,8 +13,12 @@
   </head>
 
   <body>
-    <%= yield %>
-    <button><%= link_to 'Log In', new_admin_session_path %></button>
-    <button><%= link_to 'Log Out', destroy_admin_session_path, method: :delete %></button>
+    <div class='container'>
+      <div class='offset-by-four two columns'>
+        <div class='row'>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
