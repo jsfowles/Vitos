@@ -69,6 +69,6 @@ class VitosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def vito_params
-      params.require(:vito).permit(:time, :updates)
+      params.require(:vito).permit(:open, :close, :updates)
     end
 end
